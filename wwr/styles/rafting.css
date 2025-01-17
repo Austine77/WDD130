@@ -1,0 +1,140 @@
+/* Define CSS variables */  
+:root {
+  --primary-color: #4CAF50;  /* Green */
+  --secondary-color: #1E3A8A;  /* Deep blue */
+  --accent1-color: #FF8C00;  /* Bright Orange */
+  --accent2-color: #F44336;  /* Red */
+}
+
+/* Apply Google Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #000;  /* Change text color to black */
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);  /* Green background */
+  display: flex;
+  justify-content: center;  /* Center everything */
+  padding: 10px 0;  /* Reduced padding for a smaller header */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;  /* Spread the elements across the header */
+  width: 100%;  /* Ensure it takes full width */
+  max-width: 1200px;  /* Maximum width for content */
+  align-items: center;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left a, .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  color: var(--accent1-color);  /* Hover effect with orange */
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo-container img {
+  width: 100px;  /* Adjust logo size */
+  height: auto;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #000;  /* Black text */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers', cursive;
+  font-size: 4em;
+}
+
+/* Article Section */
+article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+article img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+article p {
+  width: 70%;
+  font-size: 1.2em;
+  color: #000;  /* Black text */
+}
+
+/* Section Styles */
+section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  color: var(--primary-color);  /* Green color for section headings */
+}
+
+.rafting-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rafting-images img {
+  width: 30%;
+  height: auto;
+  margin: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primary-color);  /* Green footer */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer a img {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}

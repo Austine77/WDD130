@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #00796b;  /* Teal background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Styling */
+header nav {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.8em;
+    color: #32cd32;  /* Bright green */
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    margin: 0 20px 20px;
+    color: #555;  /* Light gray for text */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #00796b;  /* Teal footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Footer Paragraph Styling */
+footer p {
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+}
