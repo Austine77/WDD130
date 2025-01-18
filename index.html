@@ -17,7 +17,6 @@
         background-color: #1E3A8A;
         color: #ffffff;
         line-height: 1.6;
-        text-align: center;
         padding: 20px;
       }
 
@@ -26,19 +25,37 @@
         height: 200px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        padding: 0 20px;
       }
 
-      header nav a {
+      .logo {
+        flex-shrink: 0;
+      }
+
+      .logo img {
+        height: 80px;
+      }
+
+      nav {
+        margin-left: auto;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
         text-decoration: none;
         color: #ffffff;
         font-weight: bold;
-        margin: 0 15px;
         font-size: 1.2em;
+        transition: color 0.3s ease;
       }
 
-      header nav a:hover {
+      nav a:hover {
         color: #ff69b4;
+      }
+
+      main {
+        text-align: center;
       }
 
       h1 {
@@ -88,6 +105,7 @@
         padding: 10px;
         margin-top: 30px;
         font-size: 1em;
+        text-align: center;
       }
 
       footer p {
@@ -98,16 +116,16 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <img src="logo.png" alt="Rafting Logo">
-        <nav>
-          <a href="https://austine77.github.io/wdd130/">LOGO</a>
-          <a href="https://austine77.github.io/wdd130/">HOME</a>
-          <a href="#">TRIPS</a>
-          <a href="https://austine77.github.io/wdd130/wwr/about.html">ABOUT US</a>
-          <a href="#">CONTACT US</a>
-        </nav>
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
       </div>
+      <nav>
+        <a href="https://austine77.github.io/wdd130/">HOME</a>
+        <a href="#">TRIPS</a>
+        <a href="https://austine77.github.io/wdd130/wwr/about.html">ABOUT-US</a>
+        <a href="#">CONTACT-US</a>
+        <a href="https://idahoriver.com/main-salmon-rafting/?gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLaExR_F_GAxirUBEfjvWTn1sNCmg-1mWTUiZtJr0lIPksF5rzWT2IaArInEALw_wcB">RAFTING WEBSITE</a>
+      </nav>
     </header>
     <main>
       <h1>SUNDAY PRINCE AUGUSTINE | WDD 130</h1>
@@ -126,8 +144,6 @@
       </p>
       <h1>Akwa Ibom State Nigeria</h1>
       <img src="akwa-ibom.jpeg" width="1300" height="400" alt="Akwa Ibom State">
-      <p>
-      </p>
       <div class="contact-info">
         <p class="phone">Phone: +234-912-919-3069</p>
         <p class="email">Email: augustinesunday55@gmail.com</p>
