@@ -37,7 +37,7 @@ header {
 }
 
 .nav-left a, .nav-right a {
-  color: #fff;
+  color: var(--accent2-color);  /* Set text color to red */
   text-decoration: none;
   font-weight: 700;
 }
@@ -116,9 +116,10 @@ section h2 {
 }
 
 .rafting-images img {
-  width: 30%;
-  height: auto;
-  margin: 10px;
+  width: 1600px; /* Set the width to 1600px */
+  height: 600px; /* Set the height to 600px */
+  object-fit: cover; /* Ensure proportional cropping */
+  margin: 10px 0; /* Add vertical spacing */
 }
 
 /* Footer Styles */
