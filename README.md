@@ -1,6 +1,6 @@
 # WDD130 Project
 
-This repository contains the files for the WDD130 assignment, including `index.html`, `style.css`, and an image `profile.jpg`.
+This repository contains the files for the WDD130 assignment, including `index.html`, `about.html`, `style.css`, and an image `profile.jpg`.
 
 ## Project Description
 
