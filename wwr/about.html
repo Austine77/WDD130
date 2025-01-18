@@ -12,24 +12,25 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
+      color: green; /* Global text color set to green */
     }
 
     header {
       position: relative;
       height: 15vh;
-      background-image: url('background.jpeg');
+      background-image: url('background.jpg');
       background-size: cover;
       background-position: center;
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* Align content to the left */
+      justify-content: flex-start;
       padding: 10px;
     }
 
     .header-content {
       display: flex;
       align-items: center;
-      gap: 20px; /* Space between logo and nav-links */
+      gap: 20px;
     }
 
     .header-content img {
@@ -44,18 +45,18 @@
 
     .nav-links a {
       text-decoration: none;
-      color: #006400; /* Deep Green */
+      color: green; /* Nav link text color */
       font-size: 20px;
       font-weight: bold;
       padding: 5px 10px;
-      border: 2px solid #006400; /* Deep Green */
+      border: 2px solid green;
       border-radius: 5px;
       transition: background 0.3s, color 0.3s;
     }
 
     .nav-links a:hover {
-      background: #006400; /* Deep Green hover effect */
-      color: white; /* White text on hover */
+      background: green;
+      color: white;
     }
 
     main {
@@ -76,7 +77,7 @@
     }
 
     .mission-text {
-      color: blue;
+      color: green; /* Text in the mission section */
       font-size: 24px;
       font-weight: bold;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -94,12 +95,13 @@
     .history-text {
       flex: 1;
       min-width: 1000px;
+      color: green; /* Text in the history section */
     }
 
     /* Rafting Images Section */
     .rafting-images img {
       width: 100%;
-      height: 25vh;
+      height: 100vh; /* Full viewport height for fullscreen */
       object-fit: cover;
     }
 
@@ -108,7 +110,7 @@
       text-align: center;
       padding: 10px;
       background-color: #800080;
-      color: white;
+      color: green; /* Footer text color */
     }
 
     footer a img {
@@ -147,13 +149,13 @@
 
   <!-- Main Content Section -->
   <main>
-   <!-- History Section -->
-<section class="history-section">
-  <div class="history-text">
-    <h2>History</h2>
-    Nigeria White Water Rafting, founded in 2025 by Sunday Prince Augustine, brings the thrill of rafting to Nigeria. The company blends a passion for adventure with innovative technology, offering exciting rafting trips and a seamless online experience for booking. With safety as a top priority, it aims to become a leader in adventure tourism, providing unforgettable memories for every adventurer.
-  </div>
-</section>
+    <!-- History Section -->
+    <section class="history-section">
+      <div class="history-text">
+        <h2>History</h2>
+        Nigeria White Water Rafting, founded in 2025 by Sunday Prince Augustine, brings the thrill of rafting to Nigeria. The company blends a passion for adventure with innovative technology, offering exciting rafting trips and a seamless online experience for booking. With safety as a top priority, it aims to become a leader in adventure tourism, providing unforgettable memories for every adventurer.
+      </div>
+    </section>
 
     <!-- Adventure Section -->
     <section>
