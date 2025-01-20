@@ -45,7 +45,7 @@
 
     .nav-links a {
       text-decoration: none;
-      color: green; /* Nav link text color */
+      color: red; /* Nav link text color */
       font-size: 20px;
       font-weight: bold;
       padding: 5px 10px;
@@ -63,7 +63,25 @@
       padding: 20px;
     }
 
-    
+    /* Center and style the main link */
+    .main-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      font-size: 2.5rem; /* Larger text size */
+      font-weight: bold;
+      text-decoration: none;
+      color: green;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .main-link:hover {
+      text-decoration: underline;
+      color: darkgreen;
+    }
+
     /* Mission Section */
     .mission-section {
       position: relative;
@@ -78,7 +96,7 @@
     }
 
     .mission-text {
-      color: green; /* Text in the mission section */
+      color: red; /* Text in the mission section */
       font-size: 24px;
       font-weight: bold;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -134,7 +152,9 @@
     </div>
   </header>
 
-  <a href="#">About Nigeria Whitewater Rafting</a>
+  <!-- Centered Main Link -->
+  <a href="#" class="main-link">About Nigeria Whitewater Rafting</a>
+
   <!-- Mission Section -->
   <section class="mission-section">
     <div class="mission-text">
@@ -163,7 +183,7 @@
     <section>
       <h2>Adventure Awaits You!</h2>
       <div class="rafting-images">
-        <img src="rafting-image1.jpeg" alt="Whitewater Rafting">
+        <img src="rafting-image1.jpg" alt="Whitewater Rafting">
         <img src="rafting-image2.jpg" alt="Rafting Image 2">
         <img src="rafting-image3.jpg" alt="Rafting Image 3">
         <img src="rafting-image4.jpg" alt="Rafting Image 4">
