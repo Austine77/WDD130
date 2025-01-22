@@ -1,158 +1,102 @@
-/* Global Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Reset */
 body {
-    font-family: 'YourTextFont', sans-serif; /* Replace with your actual font */
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo {
-    width: 150px;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover,
-header nav ul li a:focus {
-    color: #00aaff;
-    outline: none;
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 400px;
-    background: url('back.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.hero h1 {
-    font-family: 'YourHeadingFont', serif; /* Replace with your actual font */
-    font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* About Section */
-.about-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h1,
-.about-section h2 {
-    font-family: 'YourHeadingFont', serif;
     color: #333;
-    margin-bottom: 10px;
-}
-
-.about-section p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-footer .footer-logo img {
-    width: 120px;
-    margin-bottom: 10px;
-}
-
-footer .social-media-links {
-    margin: 20px 0;
-}
-
-footer .social-media-links a {
-    color: white;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+  }
+  
+  /* Hero Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
     margin: 0 15px;
+  }
+  
+  nav a {
     text-decoration: none;
-    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
     transition: color 0.3s ease;
-}
-
-footer .social-media-links a:hover,
-footer .social-media-links a:focus {
-    color: #00aaff;
-    outline: none;
-}
-
-footer p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero {
-        height: 300px;
-    }
-
-    .hero h1 {
-        font-size: 24px;
-    }
-
-    .about-section {
-        padding: 15px;
-        margin: 10px;
-    }
-
-    footer .social-media-links a {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-}
+  }
+  
+  nav a:hover {
+    color: #00ccff;
+  }
+  
+  nav a.active {
+    font-weight: 700;
+    color: #ffcc00;
+  }
+  
+  /* Main Content Styling */
+  main {
+    text-align: center;
+    margin: 50px 20px;
+  }
+  
+  main h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    font-size: 2.2em;
+    color: hwb(49 7% 5%);
+  }
+  
+  /* Section Styling */
+  section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Profile Image Styling */
+  .profile-img {
+    width: 20%;
+    border-radius: 10px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
