@@ -1,4 +1,4 @@
-/* General Reset */
+/* Global Styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,103 +6,153 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: 'YourTextFont', sans-serif; /* Replace with your actual font */
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f9f9f9;
-    padding: 0 15px;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo img {
-    height: 50px;
+header .logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
-.nav-links {
-    list-style: none;
+header nav ul {
+    list-style-type: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
-.nav-links a {
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    background-color: #005bb5;
-    color: #fff;
+header nav ul li a:hover,
+header nav ul li a:focus {
+    color: #00aaff;
+    outline: none;
 }
 
-/* Main Content */
-main {
-    margin-top: 20px;
-}
-
-main h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('path-to-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
 }
 
-main p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
+.hero h1 {
+    font-family: 'YourHeadingFont', serif; /* Replace with your actual font */
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-section {
-    margin: 20px 0;
-}
-
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #005bb5;
-}
-
-section ul {
-    list-style: disc;
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
-section figure {
+/* About Section */
+.about-section {
+    max-width: 800px;
     margin: 20px auto;
-    text-align: center;
-}
-
-section img {
-    max-width: 100%;
-    height: auto;
+    padding: 20px;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-figcaption {
-    margin-top: 10px;
-    font-style: italic;
-    color: #666;
+.about-section h1,
+.about-section h2 {
+    font-family: 'YourHeadingFont', serif;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-/* Footer Styles */
+.about-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
 footer {
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #0073e6;
+    background-color: #333;
+    color: white;
     text-align: center;
-    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+footer .footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+footer .social-media-links {
+    margin: 20px 0;
+}
+
+footer .social-media-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+footer .social-media-links a:hover,
+footer .social-media-links a:focus {
+    color: #00aaff;
+    outline: none;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .about-section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    footer .social-media-links a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
 }
