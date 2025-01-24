@@ -1,73 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Us page for White Water Rafting (WWR).">
-    <meta name="author" content="Austine77">
-    <title>Whitewater Rafting</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Rafting Company</title>
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      position: relative;
+      height: 15vh;
+      background-image: url('background.jpeg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Align content to the left */
+      padding: 10px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Space between logo and nav-links */
+    }
+
+    .header-content img {
+      width: 150px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #006400; /* Deep Green */
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border: 2px solid #006400; /* Deep Green */
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: #006400; /* Deep Green hover effect */
+      color: white; /* White text on hover */
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Mission Section */
+    .mission-section {
+      position: relative;
+      background-image: url('happy-client.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .mission-text {
+      color: blue;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    /* History Section */
+    .history-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .history-text {
+      flex: 1;
+      min-width: 1000px;
+    }
+
+    /* Rafting Images Section */
+    .rafting-images img {
+      width: 100%;
+      height: 25vh;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #800080;
+      color: white;
+    }
+
+    footer a img {
+      width: 40px;
+      margin: 0 5px;
+    }
+  </style>
 </head>
-
 <body>
-    <header class="hero-header">
-        <div class="hero-content">
-            <img src="sitelogo.png" alt="Logo" class="logo">
-            <nav>
-                <a href="https://austine77.github.io/wdd130/">Home</a>
-                <a href="https://austine77.github.io/wdd130/wwr/about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <img src="sitelogo.png" alt="Rafting Logo">
+      <div class="nav-links">
+        <a href="https://austine77.github.io/wdd130/">HOME</a>
+        <a href="TRIPS.html">TRIPS</a>
+        <a href="https://austine77.github.io/wdd130/wwr/about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <div class="hero">
-            <h1>About White Water Rafting</h1>
-            <article>
-                <img src="client.png" alt="Happy Client" class="client-image">
-                <p>We craft unforgettable whitewater rafting adventures filled with excitement, thrill, and memories that will last a lifetime. Join us and embark on the journey of a lifetime!</p>
-            </article>
-        </div>
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <div class="mission-text">
+      Our mission is to deliver exhilarating rafting adventures, ensuring the highest standards of safety while creating unforgettable experiences for every adventurer.
+    </div>
+  </section>
 
-        <section>
-            <h2>History</h2>
-            <p>Experience the ultimate whitewater rafting adventure with White Water Rafting, founded by Austine77 in 2025 and proudly based in Akwa Ibom, Nigeria. Whether you’re seeking family-friendly fun or the adrenaline rush of tackling high-octane rapids, we deliver unforgettable experiences tailored for every thrill-seeker.  
-                Join us and create memories that last a lifetime! Your next great adventure starts here. 🌊</p>
-        </section>
+  <div class="nav-links">
+    <a href="https://govandals.com/">
+      <img src="Idaho.webp" alt="Idaho Sports" style="width: 1200px; height: auto; display: block; margin-bottom: 7px;">
+      BYU IDAHO SPORTS PLATFORM ( CLICK HERE) 
+    </a>
+  </div>
 
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <div class="gallery">
-                <figure>
-  <img src="rafting1.jpg" alt="Whitewater Rafting">
-  <img src="rafting2.jpg" alt="Whitewater Rafting">
-  <img src="rafting3.jpg" alt="Whitewater Rafting">
-  <img src="rafting4.jpg" alt="Whitewater Rafting">
-  <img src="rafting5.jpg" alt="Whitewater Rafting">
-  <img src="rafting6.jpg" alt="Whitewater Rafting">
-  <img src="rafting7.jpg" alt="Whitewater Rafting">
-  <img src="rafting8.jpg" alt="Whitewater Rafting">
-  <img src="rafting9.jpg" alt="Whitewater Rafting">
-</figure>tion>Our whitewater rafting adventures await!</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
+  <!-- Main Content Section -->
+  <main>
+   <!-- History Section -->
+<section class="history-section">
+  <div class="history-text">
+    <h2>History</h2>
+    Nigeria White Water Rafting, founded in 2025 by Sunday Prince Augustine, brings the thrill of rafting to Nigeria. The company blends a passion for adventure with innovative technology, offering exciting rafting trips and a seamless online experience for booking. With safety as a top priority, it aims to become a leader in adventure tourism, providing unforgettable memories for every adventurer.
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 White Water Rafting | Developed by Austine77 - S-P Web & Software Solution</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/"><img src="facebook.jpeg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="twitter.png" alt="Twitter"></a>
-            <a href="https://x.com/"><img src="instagram.jpeg" alt="Instagram"></a>
-        </div>
-    </footer>
+    <!-- Adventure Section -->
+    <section>
+      <h2>Adventure Awaits You!</h2>
+      <div class="rafting-images">
+        <img src="rafting1.jpg" alt="Whitewater Rafting">
+        <img src="rafting2.jpg" alt="Whitewater Rafting">
+        <img src="rafting3.jpg" alt="Whitewater Rafting">
+        <img src="rafting4.jpg" alt="Whitewater Rafting">
+        <img src="rafting5.jpg" alt="Whitewater Rafting">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Nigeria White Water Rafting | All rights reserved | Sunday Prince Augustine</p>
+    <a href="https://facebook.com"><img src="facebook.jpeg" alt="Facebook"></a>
+    <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+    <a href="https://instagram.com"><img src="instagram.jpeg" alt="Instagram"></a>
+  </footer>
 </body>
-
 </html>
