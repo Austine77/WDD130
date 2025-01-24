@@ -1,119 +1,4 @@
-/* Font Classes */
-.bangers-regular {
-  font-family: "Bangers", serif;
-  font-weight: 400;
-}
-
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-}
-
-/* General Reset */
-body {
-  margin: 0;
-  font-family: "Poppins", serif;
-  line-height: 1.6;
-  color: #333;
-  background-image: url('back.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-/* Hero Header Styling */
-.hero-header {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  color: white;
-  text-align: center;
-  position: relative;
-  height: 300px;
-}
-
-.hero-header .hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 100%;
-}
-
-.hero-header .logo {
-  max-height: 80px;
-}
-
-.hero-header nav {
-  display: flex;
-  gap: 20px;
-}
-
-.hero-header nav a {
-  color: white;
-  text-decoration: none;
-  font-family: "Bangers", serif;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-.hero-header nav a:hover {
-  color: #FFD700;
-}
-
-/* Main Content Styling */
-.hero {
-  padding: 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-family: "Bangers", serif;
-}
-
-.client-image {
-  border-radius: 10px;
-  width: 30%;
-  height: 300px;
-}
-
-/* Section Styling */
-section {
-  margin: 20px;
-}
-
-section h2 {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-}
-
-/* Rafting Images Section Styling */
-.rafting-images {
-  display: flex;
-  gap: 15px; /* Space between images */
-  flex-wrap: wrap;
-  justify-content: center; /* Centers images */
-}
-
-.rafting-images img {
-  width: 100%; /* Full width of the container */
-  height: 25vh;
-  object-fit: cover; /* Maintain aspect ratio */
-  max-width: 400px; /* Prevent images from growing too large */
-  border-radius: 10px;
-}
-
-/* Gallery Section for other images */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
+/* Gallery Image Styling */
 .gallery img {
   width: 30%;
   border-radius: 10px;
@@ -131,4 +16,20 @@ footer .social-media img {
   width: 7%;
   margin: 0 5px;
   border-radius: 5px;
+}
+
+/* Font Styling */
+
+/* Bangers Font */
+.bangers-regular {
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Poppins Font */
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
 }
