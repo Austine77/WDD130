@@ -2,25 +2,23 @@
 .bangers-regular {
   font-family: "Bangers", serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 .poppins-bold {
   font-family: "Poppins", serif;
   font-weight: 700;
-  font-style: normal;
 }
 
 /* General Reset */
 body {
   margin: 0;
-  font-family: "Poppins", serif; /* Updated default font */
+  font-family: "Poppins", serif;
   line-height: 1.6;
   color: #333;
   background-image: url('back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -31,7 +29,7 @@ body {
   color: white;
   text-align: center;
   position: relative;
-  height: 300px; 
+  height: 300px;
 }
 
 .hero-header .hero-content {
@@ -55,7 +53,7 @@ body {
 .hero-header nav a {
   color: white;
   text-decoration: none;
-  font-family: "Bangers", serif; /* Updated link font */
+  font-family: "Bangers", serif;
   font-size: 18px;
   transition: color 0.3s;
 }
@@ -73,11 +71,13 @@ body {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-family: "Bangers", serif; /* Updated header font */
+  font-family: "Bangers", serif;
 }
 
 .client-image {
   border-radius: 10px;
+  width: 30%;
+  height: 300px;
 }
 
 /* Section Styling */
@@ -86,7 +86,7 @@ section {
 }
 
 section h2 {
-  font-family: "Poppins", serif; /* Updated section header font */
+  font-family: "Poppins", serif;
   font-weight: 700;
 }
 
@@ -95,6 +95,11 @@ section h2 {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
 }
 
 /* Footer Styling */
@@ -106,5 +111,7 @@ footer {
 }
 
 footer .social-media img {
+  width: 7%;
   margin: 0 5px;
+  border-radius: 5px;
 }
