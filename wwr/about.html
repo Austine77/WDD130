@@ -11,18 +11,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* Aligning logo to the left and navigation to the right */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            height: 50px; /* Adjust logo size */
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        /* Centering content */
+        .hero {
+            text-align: center;
+        }
+
+        .client-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .gallery figure {
+            margin: 0;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
 </head>
 
 <body>
     <header class="hero-header">
         <div class="hero-content">
+            <img src="sitelogo.png" alt="Logo" class="logo">
             <nav>
-                <a href="https://austine77.github.io/wdd130/">Logo</a>
+                <a href="https://austine77.github.io/wdd130/">Home</a>
                 <a href="https://austine77.github.io/wdd130/wwr/about.html">About Us</a>
                 <a href="trips.html">Trips</a>
                 <a href="contact.html">Contact Us</a>
             </nav>
-            <img src="sitelogo.png" alt="Logo" class="logo">
         </div>
     </header>
 
