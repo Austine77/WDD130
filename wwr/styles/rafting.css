@@ -1,4 +1,5 @@
-/* Gallery Image Styling */
+}
+
 .gallery img {
   width: 30%;
   border-radius: 10px;
@@ -16,20 +17,4 @@ footer .social-media img {
   width: 7%;
   margin: 0 5px;
   border-radius: 5px;
-}
-
-/* Font Styling */
-
-/* Bangers Font */
-.bangers-regular {
-  font-family: "Bangers", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Poppins Font */
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
 }
