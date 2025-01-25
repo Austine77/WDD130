@@ -1,136 +1,74 @@
-/* General styles */
+/* Global styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Header styles */
-header {
+.hero-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
 }
 
-.logo {
-    height: 50px;
+.hero-header .logo {
+    width: 150px;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
+.hero-header nav a {
+    margin-left: 20px;
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-nav a:hover {
-    color: #007bff;
+.hero-header nav a:hover {
+    text-decoration: underline;
 }
 
-/* Hero section styles */
+.center {
+    text-align: center;
+}
+
 .hero {
-    text-align: center;
-    margin: 50px 0;
+    margin: 20px;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.client-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-}
-
-/* Section styles */
-section {
-    text-align: center;
-    margin: 40px 0;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Gallery styles */
 .gallery {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    text-align: center;
+    justify-content: center;
 }
 
 .gallery figure {
-    margin: 0;
-}
-
-.gallery img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-
-figcaption {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-
-footer p {
-    font-size: 1rem;
-    color: #333;
-}
-
-.social-media a {
     margin: 0 10px;
 }
 
-.social-media img {
-    width: 40px;
-    height: 40px;
+.gallery img {
+    width: 200px;
+    height: 150px;
     object-fit: cover;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    nav a {
-        margin-bottom: 10px;
-    }
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
 }
