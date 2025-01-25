@@ -1,56 +1,86 @@
-/* Global styles */
+/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-.hero-header {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    padding: 0 20px;
 }
 
-.hero-header .logo {
-    width: 150px;
+header .logo {
+    width: 150px; /* Limit logo size */
 }
 
-.hero-header nav a {
-    margin-left: 20px;
+nav a {
     color: white;
+    margin: 0 15px;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
 }
 
-.hero-header nav a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-.center {
+.hero-header {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.hero {
-    margin: 20px;
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.hero h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 20px 0;
 }
 
-.gallery figure {
-    margin: 0 10px;
+main {
+    padding: 40px 20px;
 }
 
-.gallery img {
-    width: 200px;
-    height: 150px;
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.client-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -60,15 +90,12 @@ footer {
     text-align: center;
 }
 
-footer .social-media {
-    margin-top: 10px;
-}
-
 footer .social-media a {
     margin: 0 10px;
 }
 
-footer .social-media img {
-    width: 30px;
+footer .social-media .social-img {
+    width: 30px; /* Limit social media icon size */
     height: 30px;
+    object-fit: contain;
 }
